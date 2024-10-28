@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2{
+    justify-content: center;
+    color: rgb(236, 5, 5);
+    background-color: rgb(245, 241, 241);
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+main img {
+    border-radius: 500px;
+    width: 100%;
+}
+

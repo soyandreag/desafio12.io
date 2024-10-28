@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requerimiento 2 - Stickers</title>
+    <link rel="stylesheet" href="./assets/css/style-2.css">
+</head>
+<body>
+    <h1>Puedes llevar hasta 10 stickers</h1>
+    <!--Sección stickers-->
+    <div class="stickers">
+        <div class="item1">
+            <img src="./assets/img/html-1.webp" alt="Logo HTML">
+            <br><input type="number" class="logo1">
+        </div>
+
+        <div class="item2">
+            <img src="./assets/img/css-2.png" alt="Logo CSS">
+            <br><input type="number" class="logo2">
+        </div>
+
+        <div class="item3">
+            <img src="./assets/img/js-3.png" alt="Logo JavaScript">
+            <br><input type="number" class="logo3">
+        </div>
+    </div>
+
+    <!--Sección Suma-->
+    <p class="total"></p>
+    <button onclick="
+        var logo1 = document.querySelector('.logo1').value
+        var logo2 = document.querySelector('.logo2').value
+        var logo3 = document.querySelector('.logo3').value
+        frase = document.querySelector ('#frase')
+        total = document.querySelector('#total')
+
+        suma = Number(logo1)+Number(logo2)+Number(logo3)
+
+        if(suma >10){
+            total.innerHTML= 'Llevas demasiados stickers'
+        }else {
+            total.innerHTML= suma
+        }
+        ">Verificar
+    </button>
+    <p id="frase"><span id="total"></span></p>
+</body>
+</html>

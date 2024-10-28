@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requerimiento 1 - Borde Imagen</title>
+    <link rel="stylesheet" href="./assets/css/style-1.css">
+</head>
+<body>
+    <main>
+        <h2>Click para añadir borde rojo</h2>
+
+        <img id="logo" 
+            src="./assets/img/logo-DL.webp" alt="Logo Desafío Latam"
+            onclick="
+            logo = document.querySelector('#logo')
+
+            if(logo.style.border){
+                logo.style.border = 'none';
+            } else {
+                logo.style.border = 'solid 2px red' 
+            }
+            ">
+    </main>
+</body>
+</html>

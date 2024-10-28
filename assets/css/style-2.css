@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img{
+    display: flex;
+    height: 200px;
+    width: auto;
+    justify-content: center;
+}
+
+class.item3{
+    height: 200px;
+    width: auto;;
+}
+
+button{
+    margin-top: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(31, 224, 224);
+    border-radius: 7px;
+}

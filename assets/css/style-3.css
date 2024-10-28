@@ -1,0 +1,15 @@
+select{
+    text-align: center;
+    width: 40px;
+    height: 20px;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+button{
+    width: 70px;
+    color: blue;
+    font-size: 90%;
+    position: absolute;
+}

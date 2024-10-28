@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requerimiento 3 - Password</title>
+    <link rel="stylesheet" href="./assets/css/style-3.css">
+</head>
+<body>
+    <main>
+        <h2>Ingresa el password</h2>
+        <div class="lista-items">
+            <select name="primero" id="num1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+
+            <select name="segundo" id="num2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+
+            <select name="tercero" id="num3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+    </main>
+
+    <button onclick="
+        var num1 = document.querySelector('#num1').value
+        var num2 = document.querySelector('#num2').value
+        var num3 = document.querySelector('#num3').value
+        var total = Pass(num1) + Pass(num2) + Pass(num3)
+        
+        if (total == '911'){
+            var pass=document.querySelector ('.password')
+            clave.innerHTML = 'Password 1 correcto'
+        }else if (total == '714'){
+            var pass=document.querySelector ('.password')
+            clave.innerHTML = 'Password 2 correcto'
+        }else {
+            var pass=document.querySelector ('.password')
+            clave.innerHTML = 'Password incorrecto'
+        }
+        ">Ingresar </button>
+    <p id="password"></p>
+</body>
+
+</html>
